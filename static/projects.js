@@ -1,9 +1,9 @@
 const projects = [
   {
     id: 1,
-    title: "UpTalent",
-    img: "./static/images/Uptalent.jpg",
-    url: "https://white-plant-071773303.3.azurestaticapps.net/home",
+    title: "Doctoo",
+    img: "./static/images/doctoo.jpg",
+    url: "https://doctoo.org",
   },
   {
     id: 2,
