@@ -5,14 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio-page</title>
-    <link rel="icon" href="./static/images/paper-plane.png" />
+    <link rel="icon" href="./static/logo.svg" />
+    <link rel="stylesheet" href="./globals.css" />
     <link rel="stylesheet" href="./styles.css" />
     <script src="./scripts.js"></script>
     <script src="./static/projects.js"></script>
-    <script
-      src="https://kit.fontawesome.com/2905b66f44.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
       ScrollReveal({
@@ -23,32 +21,86 @@
     </script>
   </head>
   <body>
-    <nav id="navbar">
-      <a href="#welcome-section">About</a>
-      <a href="#projects">Works</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <section id="welcome-section" class="section">
-      <h1 class="title">
-        Hey! <br />
-        I am Anastasiia Bahinska
-      </h1>
-      <p>a web developer</p>
-    </section>
-    <section id="projects">
-      <h2 class="project-section-header">These are some of my projects</h2>
-      <div class="project-grid"></div>
-      <a
-        class="all"
-        href="https://github.com/asya982?tab=repositories"
-        target="_blank"
-        >Show all<i class="fa-solid fa-chevron-right"></i
-      ></a>
-    </section>
-    <section id="contact" class="section">
+    <header>
+      <nav id="navbar">
+        <p>Anastasiia Bahinska</p>
+        <div class="navigation-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contacts</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="about" class="section">
+        <article class="about-me">
+          <p class="position">Front-end developer</p>
+          <h1 class="title">Hello, my name is Anastasiia Bahinska</h1>
+          <p class="side-text">
+            Passionate Front-End Developer skilled in translating designs into
+            user-friendly web applications. A fast-learner, detail-oriented, and
+            time-efficient problem solver. Committed to staying updated with the
+            latest technologies to create innovative user experiences. Ideal for
+            your development team.
+          </p>
+          <div class="actions">
+            <a
+              href="https://drive.google.com/file/d/1OMzNtwMnYyPaJl4V7NHo7M2agtqwSByV/view?usp=sharing"
+              class="btn btn-filled"
+              >Resume</a
+            >
+            <a
+              href="https://linkedin.com/in/anastasiia-bahinska-9b0b49251"
+              class="btn btn-outlined"
+              >LinkedIn</a
+            >
+          </div>
+        </article>
+        <div class="photo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="720"
+            height="629"
+            viewBox="0 0 720 629"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              id="myCircle"
+              clip-rule="evenodd"
+              d="M426.755 -247.339C526.01 -242.623 630.416 -205.737 691.019 -128.942C747.053 -57.9359 709.403 42.8884 725.408 131.114C738.276 202.044 786.302 264.961 775.404 336.204C763.332 415.132 724.842 490.453 662.532 542.186C597.271 596.368 510.835 641.895 426.755 625.671C345.261 609.947 319.875 506.823 250.249 462.635C174.069 414.287 41.2528 440.785 6.43092 358.913C-27.6816 278.71 83.9568 208.257 106.308 124.209C131.067 31.1084 79.6084 -81.3667 143.094 -154.976C208.865 -231.236 324.689 -252.189 426.755 -247.339Z"
+              fill="#FDC435"
+            />
+            <image
+              width="800"
+              height="600"
+              xlink:href="./static/images/developer.png"
+              clip-path="url(#myCircle)"
+              x="55"
+              y="10"
+            
+            />
+          </svg>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="project-section-header">
+          <h2>Projects</h2>
+          <hr />
+        </div>
+        <div class="project-grid"></div>
+        <a
+          class="btn btn-filled"
+          href="https://github.com/asya982?tab=repositories"
+          target="_blank"
+          >Show all<i class="fa-solid fa-chevron-right"></i
+        ></a>
+      </section>
+    </main>
+    <footer id="contact" class="section footer">
       <div class="contact-header">
         <h1 class="title">Let's work together...</h1>
-        <p>How do you take your coffee?</p>
+        <p class="side-text">How do you take your coffee?</p>
       </div>
       <div class="contact-links">
         <a
@@ -56,21 +108,22 @@
           href="https://github.com/asya982"
           id="profile-link"
           target="_blank"
-          ><i class="fa-brands fa-square-github"></i>GitHub</a
+          ><i class="ph-light ph-github-logo"></i>GitHub</a
         >
-        <a class="contact-details" href="mailto:bagin.nst@gmail.com"
-          ><i class="fa-solid fa-at"></i>Send a mail</a
-        >
+        <a class="contact-details" id="email" href="mailto:bagin.nst@gmail.com"
+          ><i class="ph-light ph-envelope"></i>Send a mail
+          <p class="tooltip">Click to copy</p>
+        </a>
         <a
           class="contact-details"
-          href="https://discordapp.com/users/old0999"
+          href="https://linkedin.com/in/anastasiia-bahinska-9b0b49251"
           target="_blank"
-          ><i class="fa-brands fa-discord"></i>Discord</a
+          ><i class="ph-light ph-linkedin-logo"></i>LinkedIn</a
         >
         <a class="contact-details" href="https://t.me/asyagrace" target="_blank"
-          ><i class="fa-brands fa-telegram"></i>Telegram</a
+          ><i class="ph-light ph-telegram-logo"></i>Telegram</a
         >
       </div>
-    </section>
+    </footer>
   </body>
 </html>

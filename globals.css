@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Nunito+Sans:opsz,wght@6..12,300&family=Playfair+Display&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --primary: rgb(253, 196, 53);
+    --accent: #902923;
+    --bg: #f0f1f7;
+    --text-gray:#828282;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    background-color: var(--bg);
+}
+
+body {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+}
+
+i {
+    margin-right: 8px;
+}
+
+.btn {
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: large;
+    width: max-content; 
+}
+
+.btn-filled {
+    background-color: var(--primary);
+    color: var(--bg);
+    border: 1px solid var(--primary);
+}
+
+.btn-outlined {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.btn-filled:hover {
+    background-color: var(--accent);
+    border: 1px solid var(--accent);
+}
+
+.btn-outlined:hover {
+    color: var(--accent);
+    border: 1px solid var(--accent);
+}
+
+.side-text {
+    color: var(--text-gray);
+}
+
+.tooltip {
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    bottom: -3rem;
+    left: 13%;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+    transition-delay: 0.5s;
+    width: 15rem;
+}
