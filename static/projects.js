@@ -46,4 +46,12 @@ const projects = [
     description:
       "This app is simulate smartphone main features such as: phone calls, calendar, calculator and as bonus you can play 'the Hangman'. You can power up your smartphone and track current time. All app was written in JS ES6 syntax.",
   },
+  {
+    id: 7,
+    title: "Quiz with localization",
+    img: "./static/images/react-quiz.jpg",
+    url: "https://main--react-book-quiz.netlify.app/quiz/1",
+    description:
+      "This quiz is written with React and supports localization with i18n. Has responsive design, so it compatible both for desktops and mobiles. Additionally you can download all you responses in CSV format",
+  },
 ];
