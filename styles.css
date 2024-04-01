@@ -233,6 +233,15 @@
   .creator {
     display: none;
   }
+
+  #navbar {
+    background-color: rgba(240, 248, 255, 0.5);
+    border-radius: 0 0 10px 10px;
+  }
+
+  .navigation-links {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width:1250px) {
